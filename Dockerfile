@@ -9,5 +9,5 @@ RUN apk add --update openssh bash openrc \
 	&& echo "root:Docker!" | chpasswd \
 	&& chmod 755 /opt/startup/init.sh
 
-EXPOSE 2222 80
+EXPOSE 2222 8080
 ENTRYPOINT ["/opt/startup/init.sh"]
